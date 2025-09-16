@@ -1,0 +1,3 @@
+[submodule "external/F4VRCommonFramework"]
+	path = external/F4VRCommonFramework
+	url = https://github.com/ArthurHub/F4VRCommonFramework.git
