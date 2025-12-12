@@ -3,7 +3,7 @@
 #include "Resources.h"
 #include "common/ConfigBase.h"
 
-namespace my_mod
+namespace immersive_hud
 {
     static const auto BASE_PATH = common::BASE_PATH + "\\" + std::string(Version::PROJECT);
     static const auto INI_PATH = BASE_PATH + "\\" + std::string(Version::PROJECT) + ".ini";

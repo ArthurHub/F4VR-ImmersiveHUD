@@ -2,6 +2,7 @@
 
 #include "Config.h"
 #include "ModBase.h"
+#include "RE/NetImmerse/NiAVObject.h"
 
 namespace immersive_hud
 {
@@ -12,7 +13,7 @@ namespace immersive_hud
             ModBase(Settings(
                 Version::PROJECT,
                 Version::NAME,
-                &my_mod::g_config,
+                &g_config,
                 32,
                 true)) {}
 
@@ -21,6 +22,7 @@ namespace immersive_hud
         virtual void onGameLoaded() override;
         virtual void onGameSessionLoaded() override;
         virtual void onFrameUpdate() override;
+        static void relocateHUDElement(const std::string& elementName, RE::NiAVObject* rootNode, const RE::NiAVObject* toNode);
 
     private:
     };
